@@ -1,0 +1,47 @@
+.principal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+  }
+  .principal__img{
+    margin-left: 4rem;
+  }
+  .principal__card{
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    padding: 3rem;
+  }
+  
+  .principal__card-cabecalho{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .principal__card-texto{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    line-height: 3rem;
+  }
+  
+  .principal__card-ingresso{
+    background-color: #2E7BA2;
+    color: white;
+    font-size: 1.25rem;
+    padding: 0.5rem 2rem;
+    border-radius: 16px;
+    font-weight: bold;
+    box-shadow: 4px 4px 0px #444444;
+    transition: all 0.5s;
+  }
+  
+  .principal__card-ingresso img{
+    margin-left: 1rem;
+  }
+  
+  .principal__card-ingresso:hover{
+    box-shadow: none;
+    background-color: #519EC5;
+  }

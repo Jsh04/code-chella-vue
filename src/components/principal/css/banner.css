@@ -1,0 +1,25 @@
+.banner__footer{
+    background-image: url("../../../assets/imgs/Tema_Verao/Desktop/Imagens/1 - Imagem homepage2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 338px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  .banner__titulo{
+    font-size: 4rem;
+    font-weight:bold;
+  }
+  
+  .banner{
+    background-image: url('../../../assets/imgs/Tema_Verao/Desktop/Imagens/Homepage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 407px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+
+.artistas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.artistas__cabecalho{
+    margin-top: 2rem
+  }
+  
+.artistas__cabecalho-titulo{
+    font-size: 4rem;
+    color: black;
+}
+  .artistas__data{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .artistas__data-linha1{
+    margin-right: 4rem;
+    border: 1px solid var(--mostarda);
+    width: 30%;
+  }
+  .artistas__data-linha2{
+    margin-left: 4rem;
+    border: 1px solid var(--mostarda);
+    width: 30%;
+  }
+  
+  .artistas__data-subtitulo{
+    background-color: var(--mostarda);
+    padding: 1.5rem;
+    font-size: 3rem;
+    color: white;
+  }
+  .atracoes__descricao{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 3rem;
+      padding: 0 0rem;
+    }
+    
+    .atracoes__descricao-texto{
+      font-weight: bold;
+      font-size: 3rem;
+    }
+    .atracoes__lista-linha1,
+    .atracoes__lista-linha2,
+    .atracoes__lista-linha3{
+      list-style: none;
+      margin-top: 1rem;
+    }
+    
+    .atracoes__texto-linha1, .atracoes__texto-linha2, .atracoes__texto-linha3{
+      display: inline-block;
+      margin: 40px 0;
+    }
+    .atracoes__texto-linha1{
+      margin: 0 4rem;
+      font-size: 40px;
+      font-weight: 700;
+    }
+    .atracoes__texto-linha2{
+      margin: 0 3.5rem;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    .atracoes__texto-linha3{
+      margin: 0 2.5rem;
+      font-size: 2rem;
+      font-weight: 500;
+    
+    }
