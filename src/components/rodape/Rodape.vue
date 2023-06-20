@@ -2,14 +2,14 @@
     <footer class="rodape ff-raleway">
         <div class="rodape__info">
           <div class="rodape__info-redes">
-            <img src="../assets/imgs/Logo-cinza.png" alt="" srcset="">
+            <img src="../../assets/imgs/Logo-cinza.png" alt="" srcset="">
             <div class="rodape__info-redes-container">
               <p class="rodape__info-redes-texto">Acesse nossas redes: </p>
             <ul class="rodape__info-redes-lista">
-              <li class="rodape__info-redes-item"><img src="../assets/imgs/Tema_Verao/Desktop/icones/pngs/Ícone_whatsapp.png" alt="" ></li>
-              <li class="rodape__info-redes-item"><img src="../assets/imgs/Tema_Verao/Desktop/icones/pngs/Ícone_Twitch.png" alt="" ></li>
-              <li class="rodape__info-redes-item"><img src="../assets/imgs/Tema_Verao/Desktop/icones/pngs/Ícone_twitter.png" alt="" ></li>
-              <li class="rodape__info-redes-item"><img src="../assets/imgs/Tema_Verao/Desktop/icones/pngs/Ícone_instagram.png" alt=""></li>
+              <li class="rodape__info-redes-item"><img src="../../assets/imgs/Tema_Verao/Desktop/icones/pngs/Ícone_whatsapp.png" alt="" ></li>
+              <li class="rodape__info-redes-item"><img src="../../assets/imgs/Tema_Verao/Desktop/icones/pngs/Ícone_Twitch.png" alt="" ></li>
+              <li class="rodape__info-redes-item"><img src="../../assets/imgs/Tema_Verao/Desktop/icones/pngs/Ícone_twitter.png" alt="" ></li>
+              <li class="rodape__info-redes-item"><img src="../../assets/imgs/Tema_Verao/Desktop/icones/pngs/Ícone_instagram.png" alt=""></li>
             </ul>
             </div>
           </div>

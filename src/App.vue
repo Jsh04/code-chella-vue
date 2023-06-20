@@ -1,7 +1,7 @@
 <template>
     <Cabecalho />
     <main>
-      <Principal />
+      <router-view></router-view>
     </main>
     <Rodape />
 </template>
@@ -10,13 +10,13 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import Cabecalho from './components/Cabecalho.vue';
-import Rodape from './components/ /Rodape.vue';
 import Principal from './components/principal/Principal.vue';
+import Rodape from './components/rodape/Rodape.vue';
+import Cabecalho from './components/cabecalho/Cabecalho.vue';
 
 export default defineComponent({
     name: 'App',
-    components: { Cabecalho, Rodape, Principal }
+    components: { Cabecalho, Rodape }
 });
 </script>
 
