@@ -1,5 +1,5 @@
 <template>
-    <section class="banner" :style="{ backgroundImage: `url(${backgroundImage})`}">
+    <section class="banner">
         <h2 class="banner__titulo ff-calistoga">{{bannerTitulo}}</h2>
     </section>
 </template>
@@ -15,10 +15,6 @@ export default defineComponent({
             type: String,
             default: ''
         },
-        backgroundImage:{
-            type: String,
-            required: true
-        }
     }
 }
 ,)

@@ -10,7 +10,6 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import Principal from './components/principal/Principal.vue';
 import Rodape from './components/rodape/Rodape.vue';
 import Cabecalho from './components/cabecalho/Cabecalho.vue';
 

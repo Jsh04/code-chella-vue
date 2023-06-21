@@ -2,7 +2,7 @@ import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import Principal from '../components/principal/Principal.vue';
 import IngressoComponent from '../components/ingresso/Ingresso.vue'
 import Experiencia from '../components/experiencia/Experiencia.vue'
-
+import MapaSetores from '../components/setores/MapaSetores.vue'
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
@@ -21,7 +21,12 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/ingresso',
     component: IngressoComponent
+  },
+  {
+    path: '/setores',
+    component: MapaSetores
   }
+
 ]
 
 const router = createRouter({

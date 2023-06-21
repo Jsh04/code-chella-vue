@@ -4,7 +4,7 @@
         <nav class="cabecalho__navegacao">
             <ul class="cabecalho__navegacao-lista">
                 <li class="cabecalho__navegacao-item"><router-link to="/experiencia">A experiência</router-link> </li>
-                <li class="cabecalho__navegacao-item">Mapa de Setores</li>
+                <li class="cabecalho__navegacao-item"><router-link to="/setores">Mapa de Setores</router-link></li>
                 <li class="cabecalho__navegacao-item"><a>Informações</a></li>
                 <li class="cabecalho__navegacao-item"><router-link to="/ingresso"> Ingresso</router-link></li>
             </ul>

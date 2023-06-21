@@ -1,0 +1,46 @@
+.mapa-setores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 4rem 6rem;
+}
+.mapa-setores__lista{
+    list-style: none;
+}
+.mapa-setores__item::before{
+    content: '';
+    background-color: #0E7DF1;
+    padding: 0.25rem 1rem;
+    margin-right: 1rem;
+}
+.mapa-setores__item:nth-child(3)::before{
+    background-color: #FE016E;
+}
+
+.mapa-setores__item:nth-child(4)::before{
+    background-color: #01A89E;
+}
+
+.mapa-setores__item:nth-child(5)::before{
+    background-color:#3F51B5;
+}
+
+.mapa-setores__item{
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    margin: 1rem;
+}
+.mapa-setores__item::before{
+    content: '';
+    background-color: #0E7DF1;
+    padding: 0.25rem 1rem;
+    margin-right: 1rem;
+}
+.mapa-setores__titulo{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: start;
+}
