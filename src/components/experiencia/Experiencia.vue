@@ -1,7 +1,5 @@
 <template>
-    <section class="banner">
-        <h2 class="banner__titulo ff-calistoga">A Experiência</h2>
-    </section>
+    <Banner :banner-titulo="'A Experiência'" :banner-image="urlImage"/>
     <section class="experiencia">
         <article class="experiencia__card">
             <img src="../../assets/imgs/Tema_Verao/Desktop/Imagens/2-experiencia1.png" alt="">
@@ -40,27 +38,17 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import Banner from '../banner/Banner.vue'
 export default defineComponent({
     // eslint-disable-next-line vue/multi-word-component-names
     name: "Experiencia",
-    components: {}
+    components: {Banner},
+    data(){
+        return {
+            urlImage: require('@/assets/imgs/Tema_Verao/Desktop/Imagens/2-Experiencia.png')
+        }
+    }
 })
 </script>
-<style>
-.banner {
-    background-image: url("../../assets/imgs/Tema_Verao/Desktop/Imagens/2-Experiencia.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 407px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.banner__titulo {
-    font-size: 4rem;
-    font-weight: bold;
-}
-</style>
 <style src="./css/experiencia.css"></style>
 <style src="./css/experiencia-card.css"></style>

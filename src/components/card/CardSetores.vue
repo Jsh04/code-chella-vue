@@ -1,8 +1,8 @@
 <template>
-    <article class="card">
-        <img class="card__img" v-bind:src="imagem" :alt="altImagem">
-        <h2 class="card__titulo ff-raleway">{{ titulo }}</h2>
-        <p class="card__descricao ff-raleway">{{ descricao }}</p>
+    <article class="card__article">
+        <img class="card__article-img" v-bind:src="imagem" :alt="altImagem">
+        <h2 class="card__article-titulo ff-raleway">{{ titulo }}</h2>
+        <p class="card__article-descricao ff-raleway">{{ descricao }}</p>
     </article>
 </template>
 
@@ -34,24 +34,24 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.card{
+.card__article{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 33%;
     padding: 1rem;
 }
-.card__img{
+.card__article-img{
     border-radius: 1rem;
     width: 100%;
     margin-bottom: 1rem;
 }
 
-.card__titulo{
+.card__article-titulo{
     font-size: 2rem;
     margin: 1.5rem 0;
 }
-.card__descricao{
+.card__article-descricao{
     font-size: 1.25rem;
     line-height: 2.5rem;
     font-weight: 500;

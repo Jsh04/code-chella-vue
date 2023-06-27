@@ -1,0 +1,26 @@
+.perguntas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 15%;
+    
+}
+.perguntas__subtitulo{
+    font-size: 4rem;
+    color: var(--cinza);
+    font-weight: 400;
+    margin: 3.5rem 0;
+}
+.perguntas__informaçoes{
+    padding: 0 10%;
+}
+.resposta__descricao{
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    color: var(--cinza);
+}
+
+.resposta__descricao a{
+    color: var(--cinza);
+}

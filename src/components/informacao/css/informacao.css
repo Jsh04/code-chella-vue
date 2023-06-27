@@ -1,0 +1,45 @@
+.informacao__drop{
+    margin: 2rem 0;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.5s;
+
+}
+.informacao__drop-cabecalho{
+    background-color: var(--azul-escuro-primary);
+    color: #ffffff;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.informacao__drop-titulo{
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+.icon {
+    margin-right: 1rem;
+    transition: all 0.5s;
+}
+
+.icon-active{
+    margin-right: 1rem;
+    transform: rotate(90deg);
+    transition: all 0.5s;
+}
+
+.informacao__drop-corpo{
+    background-color: var(--azul-marinho);
+    padding:  1rem 2rem;
+    transition: all 0.3s;
+    width: 100%;
+}
+
+.informacao__drop-corpo-desactive{
+    padding: 0 2rem;
+    overflow: hidden;
+    max-height: 0;
+}
+
+

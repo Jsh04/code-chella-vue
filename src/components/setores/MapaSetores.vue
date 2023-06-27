@@ -1,5 +1,5 @@
 <template>
-    <Banner :banner-titulo="'Mapa de Setores'" id="fundo" />
+    <Banner :banner-titulo="'Mapa de Setores'" :banner-image="imageUrl"/>
     <section class="mapa-setores">
         <img src="../../assets/imgs/Tema_Verao/Desktop/Imagens/3-Mapa-setores1.png" alt="Mapa dos setores do espaço do Show"
             class="mapa-setores__img">
@@ -12,8 +12,8 @@
             <li class="mapa-setores__item ff-raleway">Rampas</li>
         </ul>
     </section>
-    <section class="card ff-raleway">
-        <h2 class="card__titulo">Mais detalhes sobre os setores: </h2>
+    <section class="card__section ff-raleway">
+        <h2 class="card__subtitulo">Mais detalhes sobre os setores: </h2>
         <div class="card__detalhes">
             <CardSetor :titulo="primeiroCard.titulo" :imagem="primeiroCard.imagem" :descricao="primeiroCard.descricao"
             :alt-imagem="primeiroCard.alt" />
@@ -30,10 +30,11 @@ import Banner from '../banner/Banner.vue'
 import CardSetor from '../card/CardSetores.vue'
 import ICard from '@/interfaces/ICard'
 export default defineComponent({
-    name: "MapSetores",
+    name: "MapaSetores",
     components: { Banner, CardSetor },
     data() {
         return {
+            imageUrl: require('@/assets/imgs/Tema_Verao/Desktop/Imagens/3-Mapa-de-setores.png'),
             primeiroCard: {
                 imagem: require('@/assets/imgs/Tema_Verao/Desktop/Imagens/3-Mapa-de-setores2.png'),
                 titulo: 'Pista' as string,
@@ -57,11 +58,5 @@ export default defineComponent({
     }
 })
 </script>
-
-<style>
-#fundo {
-    background-image: url("../../assets/imgs/Tema_Verao/Desktop/Imagens/3-Mapa-de-setores.png");
-}
-</style>
-<style src="./css/mapa-setores.css"></style>
+<style src="./css/mapa-setores.css" scoped></style>
 <style src="./css/setores-detalhes.css" scoped></style>

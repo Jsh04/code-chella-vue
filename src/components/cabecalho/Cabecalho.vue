@@ -30,6 +30,7 @@
   list-style: none;
   color: #ffffff;
   display: inline-block;
+  margin-bottom: 0;
 }
 
 .cabecalho__navegacao-item{

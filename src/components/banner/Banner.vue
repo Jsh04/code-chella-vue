@@ -28,7 +28,7 @@ export default defineComponent({
 .banner{
     background-repeat: no-repeat;
     background-size: cover;
-    height: 407px;
+    height: 456px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,6 +37,7 @@ export default defineComponent({
   .banner__titulo{
     font-size: 4rem;
     font-weight:bold;
+    color: #444444;
   }
 
 </style>
