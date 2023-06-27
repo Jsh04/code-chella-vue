@@ -1,5 +1,5 @@
 <template>
-    <section class="banner">
+    <section class="banner" v-bind:style="{ backgroundImage:  'url('+ bannerImage +')'}">
         <h2 class="banner__titulo ff-calistoga">{{bannerTitulo}}</h2>
     </section>
 </template>
@@ -15,6 +15,10 @@ export default defineComponent({
             type: String,
             default: ''
         },
+        bannerImage: {
+            type: String,
+            default: ''
+        }
     }
 }
 ,)

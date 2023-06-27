@@ -3,6 +3,7 @@ import Principal from '../components/principal/Principal.vue';
 import IngressoComponent from '../components/ingresso/Ingresso.vue'
 import Experiencia from '../components/experiencia/Experiencia.vue'
 import MapaSetores from '../components/setores/MapaSetores.vue'
+import Informacoes from '../components/informacoes/Informacoes.vue'
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
@@ -25,6 +26,10 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/setores',
     component: MapaSetores
+  },
+  {
+    path: '/informacoes',
+    component: Informacoes
   }
 
 ]
