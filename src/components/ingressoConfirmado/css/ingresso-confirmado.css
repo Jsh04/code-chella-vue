@@ -1,0 +1,45 @@
+.ingresso-confirmado{
+    padding: 5% 30%;
+}
+
+.ingresso-confirmado__subtitulo-texto{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+    color: var(--cinza)
+}
+
+.ingresso-confirmado__dados{
+    margin-top: 2rem;
+    width: 100%;
+    background: linear-gradient(180deg, #BFDAE6 0%, #FCF0DD 50%, #FACF9D 100%);
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0,0.15);
+    padding: 2rem 3rem;
+}
+.ingresso-confirmado__dados-cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ingresso-confirmado__dados-corpo{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.ingresso-confirmado__dados-lista{
+    list-style: none;
+}
+.ingresso-confirmado__dados-corpo-item{
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    color: var(--cinza);
+}
+.ingresso-confirmado__dados-corpo-nome{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}

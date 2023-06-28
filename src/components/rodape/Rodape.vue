@@ -14,7 +14,7 @@
             </div>
           </div>
           <div class="rodape__info-direitos">
-            <p class="rodape__info-direitos-texto">Desenvolvido por Alura</p>
+            <p class="rodape__info-direitos-texto">Desenvolvido por Alura.</p>
             <p class="rodape__info-direitos-texto">Projeto fictício sem fins comerciais</p>
           </div>
         </div>
@@ -61,6 +61,27 @@ export default defineComponent({
   
   .rodape__info-direitos{
     font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    .rodape{
+      padding: 2rem 3rem;
+    }
+    .rodape__info-redes{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .rodape__info{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .rodape__info-direitos{
+      display:flex;
+      width: 100%;
+      gap: 1rem;
+    }
   }
   
 </style>

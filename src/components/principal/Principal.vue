@@ -1,7 +1,5 @@
 <template>
-    <section class="banner">
-    <h2 class="banner__titulo ff-calistoga">Boas-vindas ao <br> #CodeChella2023!</h2>
-    </section>
+    <Banner :banner-titulo="banner.titulo" :banner-image="banner.imagem"/>
       <section class="principal">
         <img class="principal__img" src="../../assets/imgs/Tema_Verao/Desktop/Imagens/homepage1.png" alt="">
         <article class="principal__card">
@@ -13,7 +11,7 @@
             <p class="principal__card-texto ff-raleway">Hora de programar nossa memória com novas lembranças! Uma nova experiência sobre música, linguagens e, claro,
               tecnologia! Somos um festival diverso, com vários artistas e referências. Divirta-se!</p>
           </div>
-          <button class="principal__card-ingresso"><span>Garantir Ingresso!</span><img src="../../assets/imgs/Tema_Verao/Desktop/icones/pngs/ícone_ingresso.png" alt=""></button>
+          <button class="principal__card-ingresso"><router-link style="color: white; text-decoration:none;" to="/ingresso"><span>Garantir Ingresso!</span><img src="../../assets/imgs/Tema_Verao/Desktop/icones/pngs/ícone_ingresso.png" alt=""></router-link></button>
         </article>
       </section>
       
@@ -82,13 +80,18 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import Banner from '../banner/Banner.vue'
 
 export default defineComponent({
     // eslint-disable-next-line vue/multi-word-component-names
     name: "Principal",
+    components: {Banner},
     data(){
       return{ 
-        image: '../../../assets/imgs/Tema_Verao/Desktop/Imagens/Homepage.png'
+        banner: {
+          titulo: 'Boas-vindas ao #CodeChella2023!',
+          imagem: require('@/assets/imgs/Tema_Verao/Desktop/Imagens/Homepage.png')
+        }
       }
     },
     methods: {

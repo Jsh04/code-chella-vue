@@ -44,7 +44,7 @@
       flex-direction: column;
       align-items: center;
       margin-top: 3rem;
-      padding: 0 0rem;
+      padding: 0 0;
     }
     
     .atracoes__descricao-texto{
@@ -76,5 +76,27 @@
       margin: 0 2.5rem;
       font-size: 2rem;
       font-weight: 500;
+    
+    }
+
+    @media screen and (max-width: 768px) {
+    .atracoes__lista-linha1,
+    .atracoes__lista-linha2,
+    .atracoes__lista-linha3{
+      text-align: center;
+      padding: 0;
+    }
+    .atracoes__texto-linha1, .atracoes__texto-linha2, .atracoes__texto-linha3{
+      display: inline-block;
+      margin: 1rem 1rem;
+    }
+    .artistas__data-linha1{
+      margin-right: 2rem;
+      width: 10%;
+    }
+    .artistas__data-linha2{
+      margin-left: 2rem;
+      width: 10%;
+    }
     
     }

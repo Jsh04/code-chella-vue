@@ -47,6 +47,15 @@
 .cabecalho__navegacao-item:hover{
   text-decoration: underline;
 }
+@media screen and (max-width: 768px) {
+  .cabecalho{
+    flex-direction: column;
+  }
+  .cabecalho__navegacao {
+    margin-top: 1rem;
+  }
+}
+
 </style>
 
 

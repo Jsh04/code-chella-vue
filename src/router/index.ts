@@ -33,7 +33,7 @@ const routes: RouteRecordRaw[] = [
     component: Informacoes
   },
   {
-    path: '/ingressoConfirmado',
+    path: '/ingressoConfirmado/:id',
     component: IngressoConfirmado
   }
 

@@ -1,8 +1,6 @@
 
 <template>
-    <section class="banner">
-        <h2 class="banner__titulo ff-calistoga">Garanta seu Ingresso</h2>
-    </section>
+   <Banner :banner-image="banner.imagem" :banner-titulo="banner.titulo"/>
 
 <section class="formulario">
     <h2 class="formulario__subtitulo ff-calistoga">Preencha o formulário a seguir: </h2>
@@ -26,7 +24,7 @@
           <label class="formulario__form-label ff-raleway" for="tipo">Tipo de ingresso: </label>
           <select v-model="opcaoIngresso" @blur="v$.opcaoIngresso.$touch" :class="[v$.opcaoIngresso.$errors.length != 0 ? 'campo__erro' : '']" name="tipo" id="tipo" class="formulario__form-input-selecao">
             <option value="">Tipo de Ingresso</option>
-            <option v-for="(item, index) of listaDeTipos" :key="index" :value="index">{{item}}</option>
+            <option v-for="(item) of tipos" :key="item.id" :value="item.id">{{item.descricao}}</option>
           </select>
           <span class="mensagem_de_erro" v-for="(error, index) in v$.opcaoIngresso.$errors" :key="index">
             {{ error.$message }}
@@ -47,7 +45,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, computed } from "vue";
 import Banner from '../banner/Banner.vue'
 import {useVuelidate} from '@vuelidate/core'
 import { required, email, minLength,helpers } from '@vuelidate/validators'
@@ -67,13 +65,17 @@ const maiorQue18 = (value: string) => {
 
 export default defineComponent({
     name: "IngressoComponent",
+    components: {Banner},
     data(){
       return {
-        listaDeTipos: ['Pista Premium', 'Cadeiras térreo', 'Cadeiras superiores', 'Rampas'],
         nomeCompleto: '',
         email: '',
         dataNascimento: '',
         opcaoIngresso: '',
+        banner: {
+          titulo: 'Garanta seu Ingresso',
+          imagem: require('@/assets/imgs/Tema_Verao/Desktop/Imagens/5-ingresso.png')
+        }
       }
     },
     validations() {
@@ -114,7 +116,10 @@ export default defineComponent({
     },
     setup(){
       const store = useStore();
-      return { v$: useVuelidate(), store }
+      return { 
+        v$: useVuelidate(),
+        store, 
+        tipos: computed(()=> store.state.tipos) }
     }
 
 })
@@ -130,6 +135,7 @@ export default defineComponent({
     font-weight: 400;
     letter-spacing: 0.15rem;
     font-size: 4rem;
+    color: var(--cinza);
   }
   .banner{
     background-image: url('../../assets/imgs/Tema_Verao/Desktop/Imagens/5-ingresso.png');

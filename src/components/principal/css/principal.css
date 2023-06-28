@@ -45,3 +45,16 @@
     box-shadow: none;
     background-color: #519EC5;
   }
+  @media screen and (max-width: 768px) {
+    .principal{
+      flex-direction: column;
+    }
+    .principal__img{
+      width: 80%;
+      margin: 0;
+    }
+    .principal__card{
+      width: 80%;
+      padding: 2rem 0;
+    }
+  }
