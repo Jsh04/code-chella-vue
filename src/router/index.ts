@@ -4,6 +4,7 @@ import IngressoComponent from '../components/ingresso/Ingresso.vue'
 import Experiencia from '../components/experiencia/Experiencia.vue'
 import MapaSetores from '../components/setores/MapaSetores.vue'
 import Informacoes from '../components/informacoes/Informacoes.vue'
+import IngressoConfirmado from '../components/ingressoConfirmado/IngressoConfirmado.vue'
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
@@ -30,6 +31,10 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/informacoes',
     component: Informacoes
+  },
+  {
+    path: '/ingressoConfirmado',
+    component: IngressoConfirmado
   }
 
 ]
