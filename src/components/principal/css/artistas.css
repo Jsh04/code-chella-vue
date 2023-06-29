@@ -79,7 +79,7 @@
     
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 968px) {
     .atracoes__lista-linha1,
     .atracoes__lista-linha2,
     .atracoes__lista-linha3{
@@ -99,4 +99,17 @@
       width: 10%;
     }
     
+    }
+    @media screen and (max-width: 540px) {
+      .artistas__data-linha1{
+        display: none;
+      }
+      .artistas__data-linha2{
+        display: none;
+      }
+      .artistas__data-subtitulo{
+        padding: 1rem;
+        width: 90%;
+        font-size: 2rem;
+      }
     }

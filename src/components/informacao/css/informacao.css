@@ -42,4 +42,10 @@
     max-height: 0;
 }
 
+@media screen and (max-width: 768px) {
+    .informacao__drop{
+        margin: 0.5rem 0;
+    }
+}
+
 

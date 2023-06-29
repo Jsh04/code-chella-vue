@@ -137,19 +137,11 @@ export default defineComponent({
     font-size: 4rem;
     color: var(--cinza);
   }
-  .banner{
-    background-image: url('../../assets/imgs/Tema_Verao/Desktop/Imagens/5-ingresso.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 407px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .banner__titulo{
-    font-size: 4rem;
-    font-weight:bold;
+
+  @media screen and (max-width: 540px) {
+    .formulario{
+      padding: 1rem 2rem;
+    }
   }
 
 </style>

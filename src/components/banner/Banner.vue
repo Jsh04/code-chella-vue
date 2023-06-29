@@ -40,4 +40,10 @@ export default defineComponent({
     color: #444444;
   }
 
+  @media screen and (max-width: 540px) {
+    .banner__titulo{
+        font-size: 2rem;
+    }
+  }
+
 </style>

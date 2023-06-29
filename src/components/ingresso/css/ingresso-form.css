@@ -76,4 +76,24 @@
 .campo__erro{
   border-color: red;
 }
+
+@media screen and (max-width: 768px) {
+  .campos__tipo__data{
+    flex-direction: column;
+  }
+  .formulario__form{
+    padding: 0 2rem;
+  }
+  .formulario__form-input{
+    margin-bottom: 0.5rem;
+  }
+}
+@media screen and (max-width: 540px){
+  .formulario__form{
+    padding: 0;
+  }
+  .formulario__botao-enviar{
+    width: 50%;
+  }
+}
   

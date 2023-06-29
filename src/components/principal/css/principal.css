@@ -45,7 +45,7 @@
     box-shadow: none;
     background-color: #519EC5;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 968px) {
     .principal{
       flex-direction: column;
     }
@@ -56,5 +56,14 @@
     .principal__card{
       width: 80%;
       padding: 2rem 0;
+    }
+  }
+  @media screen and (max-width: 540px) {
+    .principal__card-ingresso{
+      width: 100%;
+      padding: 1rem 2rem;
+    }
+    .principal{
+      padding: 1rem 1rem;
     }
   }

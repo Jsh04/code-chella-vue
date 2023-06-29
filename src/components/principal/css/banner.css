@@ -22,4 +22,10 @@
     flex-direction: column;
     justify-content: center;
   }
+
+  @media screen and (max-width: 540px) {
+    .banner__footer{
+      background-image: url('../../../assets/imgs/Tema_Verao/Mobile/Imagens/1-Homepage2.png');
+    }
+  }
   

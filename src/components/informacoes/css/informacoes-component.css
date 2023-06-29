@@ -24,3 +24,9 @@
 .resposta__descricao a{
     color: var(--cinza);
 }
+
+@media screen and (max-width: 768px) {
+    .perguntas{
+        padding: 2rem 3rem;
+    }
+}

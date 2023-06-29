@@ -63,7 +63,7 @@ export default defineComponent({
     font-size: 1.5rem;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 968px) {
     .rodape{
       padding: 2rem 3rem;
     }
@@ -81,6 +81,19 @@ export default defineComponent({
       display:flex;
       width: 100%;
       gap: 1rem;
+    }
+  }
+  @media screen and (max-width: 540px){
+    .rodape{
+      padding: 1rem;
+    }
+    .rodape__info-redes-container{
+      flex-direction: column;
+    }
+    .rodape__info-direitos{
+      margin-top: 1rem;
+      flex-direction: column;
+      align-items: center;
     }
   }
   

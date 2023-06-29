@@ -43,3 +43,25 @@
     font-weight: 700;
     margin-bottom: 1.5rem;
 }
+
+@media screen and (max-width:1200px) {
+    .ingresso-confirmado{
+        padding: 3rem 3rem;
+    }
+    .ingresso-confirmado__dados-corpo{
+        flex-direction: column;
+        align-items: center;
+    }
+    .ingresso-confirmado__dados-corpo-nome, 
+    .ingresso-confirmado__dados-corpo-item{
+        text-align: center;
+    }
+}
+@media screen and (max-width:540px){
+    .ingresso-confirmado{
+        padding: 1rem;
+    }
+    .ingresso-confirmado__dados-lista{
+        padding: 0;
+    }
+}

@@ -12,16 +12,16 @@
                     pessoas com deficiência e acompanhantes, pessoas idosas e crianças!</p>
             </div>
         </article>
-        <article class="experiencia__card">
+        <article class="experiencia__card desc-2">
             <div class="experiencia__card-conteudo">
                 <h2 class="experiencia__card-titulo setor__2 ff-raleway">Sustentabilidade</h2>
                 <p class="experiencia__card-texto setor__2 ff-raleway">Queremos estar aqui celebrando daqui a 50, 100 anos!
                     Por isso,
                     levamos o futuro do nosso planeta a sério. Nosso festival é carbono zero, com utilização de copos
                     retornáveis, coleta e destinação adequada de resíduos, e transporte coletivo.</p>
-            </div>
-            <img src="../../assets/imgs/Tema_Verao/Desktop/Imagens/2-Experiencia2.png" alt="">
-
+                </div>
+                <img src="../../assets/imgs/Tema_Verao/Desktop/Imagens/2-Experiencia2.png" alt="">
+                
         </article>
         <article class="experiencia__card">
             <img src="../../assets/imgs/Tema_Verao/Desktop/Imagens/2-Experiencia3.png" alt="">

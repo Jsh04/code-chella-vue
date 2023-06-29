@@ -5,6 +5,7 @@ import Experiencia from '../components/experiencia/Experiencia.vue'
 import MapaSetores from '../components/setores/MapaSetores.vue'
 import Informacoes from '../components/informacoes/Informacoes.vue'
 import IngressoConfirmado from '../components/ingressoConfirmado/IngressoConfirmado.vue'
+import ErroComponent from '@/components/erro/Erro.vue'
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
@@ -35,6 +36,10 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/ingressoConfirmado/:id',
     component: IngressoConfirmado
+  },
+  {
+    path:'/:catchAll()',
+    component: ErroComponent
   }
 
 ]

@@ -32,15 +32,24 @@
     line-height: 2.5rem;
     margin: 1rem;
 }
-.mapa-setores__item::before{
-    content: '';
-    background-color: #0E7DF1;
-    padding: 0.25rem 1rem;
-    margin-right: 1rem;
-}
 .mapa-setores__titulo{
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 2rem;
     text-align: start;
+}
+
+@media screen and (max-width: 768px) {
+    .mapa-setores{
+        flex-direction: column;
+        padding: 2rem 3rem;
+    }
+}
+@media screen and (max-width: 540px){
+    .mapa-setores{
+        padding: 2rem 0.5rem;
+    }
+    .mapa-setores img{
+        width: 100%;
+    }
 }

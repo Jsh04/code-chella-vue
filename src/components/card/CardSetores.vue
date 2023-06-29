@@ -57,4 +57,19 @@ export default defineComponent({
     font-weight: 500;
     text-align: center;
 }
+
+@media screen and (max-width: 768px){
+    .card__article{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .card__article-img{
+        width: 60%;
+}
+}
+@media screen and (max-width: 540px){
+    .card__article-img{
+        width: 100%;
+    }
+}
 </style>

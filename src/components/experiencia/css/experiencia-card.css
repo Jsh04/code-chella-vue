@@ -31,3 +31,32 @@
 .setor__2{
     text-align: right;
 }
+
+@media screen and (max-width: 968px) {
+    .experiencia__card{
+        flex-direction: column;
+        padding: 1rem 2rem;
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .experiencia__card img{
+        width: 100%;
+    }
+    .experiencia__card-conteudo{
+        width: 100%;
+    }
+    .experiencia__card-titulo{
+        text-align: center;
+    }
+    .desc-2{
+        flex-direction:column-reverse;
+    }
+}
+@media screen and (max-width: 540px){
+    .experiencia__card img{
+        height: 300px;
+    }
+    .setor__2{
+        text-align: justify;
+    }
+}

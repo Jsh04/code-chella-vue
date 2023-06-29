@@ -16,3 +16,13 @@
 #card__meio{
     margin-top: 7.5%;
 }
+
+@media screen and (max-width: 768px) {
+    .card__detalhes{
+        flex-direction: column;
+        width: 100%;
+    }
+    #card__meio{
+        margin: 0;
+    }
+}
