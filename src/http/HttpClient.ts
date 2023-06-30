@@ -1,7 +1,11 @@
-import axios from "axios";
+import axios, { AxiosHeaders } from "axios";
 
 const HttpClient = axios.create({
-    baseURL: process.env.VUE_APP_BASE_URL
+    baseURL: process.env.VUE_APP_BASE_URL,
+    headers: {
+        "Content-Type": "application/json",
+        'Access-Control-Allow-Origin': "*"
+    }
 })
 
 
