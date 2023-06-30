@@ -49,12 +49,12 @@ export const store = createStore<Estado>({
   },
   actions: {
     [CADASTRAR_INGRESSO](contexto, ingresso: IIngresso){
-      return http.post('/ingressos', {
+      return http.post('/ingresso', {
         ...ingresso
       })
     },
     async [OBTER_INGRESSO]({ commit }, id: number){
-      const response = await http.get(`/ingressos/${id}`)
+      const response = await http.get(`/ingresso/${id}`)
       console.log(response.data)
       return commit(PEGAR_INGRESSO, response.data)
     } 
